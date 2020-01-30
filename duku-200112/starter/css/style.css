@@ -68,6 +68,7 @@ body {
     letter-spacing: 35px;
 }
 .heading-primary-sub {
+    animation: moveInFromRight 1s ease-out;
     display: block;
     font-size: 20px;
     font-weight: 700;
@@ -81,6 +82,20 @@ body {
     }
     80% {
         transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px); /* abscissa*/
+    }
+    80% {
+        transform: translateX(-10px);
     }
     100% {
         opacity: 1;
