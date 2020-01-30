@@ -53,6 +53,7 @@ body {
     transform: translate(-50%, -50%);
 }
 .heading-primary {
+    backface-visibility: hidden;
     color: #fff;
     text-transform: uppercase;
 }
