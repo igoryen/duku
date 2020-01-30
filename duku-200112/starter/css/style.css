@@ -57,6 +57,8 @@ body {
     text-transform: uppercase;
 }
 .heading-primary-main {
+    animation-duration: 5s;
+    animation-name: moveInFromLeft;
     display: block;
     font-size: 60px;
     font-weight: 400;
@@ -67,4 +69,18 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 17.4px
+}
+
+@keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px); /* abscissa*/
+    }
+    80% {
+
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
